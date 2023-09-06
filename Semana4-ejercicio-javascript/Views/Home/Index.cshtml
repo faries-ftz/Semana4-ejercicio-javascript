@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <form action="">
+       <input type="checkbox" value="acuerdos" id="acuerdos"/>Acepta clausulas
+       <input type="checkbox" value="otros" id="otros"/>Otros acuerdos
+       <input type="submit" value="procesar" onclick='return resultado()' />
+
+    </form>
+</div>
+<script type="text/javascript">
+    var valor= document.getElementById("acuerdos");
+    
+    function resultado(){
+        if (acuerdos.checked===true){
+            alert("Seleccionado: "+acuerdos.value);
+
+        }else{
+            alert("no seleccionado")
+        }
+        return false;
+    }
+
+
+
+</script>
